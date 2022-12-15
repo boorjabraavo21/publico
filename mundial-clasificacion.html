@@ -12,12 +12,11 @@
         <ul>
             <a class="botones" href="./mundial-inicio.html"><li class="fondobotones">Inicio</li></a>
             <a class="botones" href="./mundial-clasificacion.html"><li class="fondobotones" id="seleccionado">Clasificación</li></a>
-            <a class="botones" href="./mundial-inicio.html"><li class="fondobotones">Estadísticas</li></a>
         </ul>
     </nav>
-    <div id="eliminatoria">
+    <div id="eliminatoria" class="partes">
         <a class="fase">FASE ELIMINATORIA</a>
-        <div id="tablael">
+        <div class="tabla">
             <div class="izq">
                 <a class="tipopartido">Octavos</a>
                 <div class="partido">
@@ -52,14 +51,14 @@
                 <a class="tipopartido">Semifinal</a>
                 <div class="partido">
                     <a class="ganado">Argentina</a>
-                    <a class="ganado">Croacia</a>
+                    <a class="perdido">Croacia</a>
                 </div>
             </div>
             <div id="final">
                 <a class="tipopartido">Final</a>
                 <div id="partfinal">
                     <div class="izq">
-                        <a class="ganado">Por definir</a>
+                        <a class="ganado">Argentina</a>
                     </div>
                     <div class="dcha">
                         <a class="ganado">Por definir</a>
@@ -105,192 +104,195 @@
             </div>
         </div>
     </div>
-    <a class="fase">FASE DE GRUPOS</a>
-    <div id="tablagrup">
-        <div class="grupo">
-            <a class="nombregrupo">Grupo A</a>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">1</a>
-                <a class="textonombrepuntos">Países Bajos</a>
-                <a class="textonombrepuntos">7 pts</a>
+    <div id="fondoclas" class="fondo"></div>
+    <div class="partes">
+        <a class="fase" id="fasegrupo">FASE DE GRUPOS</a>
+        <div id="tablagrup" class="tabla">
+            <div class="grupo">
+                <a class="nombregrupo">Grupo A</a>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">1</a>
+                    <a class="textonombrepuntos">Países Bajos</a>
+                    <a class="textonombrepuntos">7 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">2</a>
+                    <a class="textonombrepuntos">Senegal</a>
+                    <a class="textonombrepuntos">6 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">3</a>
+                    <a class="textonombrepuntos">Ecuador</a>
+                    <a class="textonombrepuntos">4 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">4</a>
+                    <a class="textonombrepuntos">Catar</a>
+                    <a class="textonombrepuntos">0 pts</a>
+                </div>
             </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">2</a>
-                <a class="textonombrepuntos">Senegal</a>
-                <a class="textonombrepuntos">6 pts</a>
+            <div class="grupo">
+                <a class="nombregrupo">Grupo B</a>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">1</a>
+                    <a class="textonombrepuntos">Inglaterra</a>
+                    <a class="textonombrepuntos">7 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">2</a>
+                    <a class="textonombrepuntos">EE UU</a>
+                    <a class="textonombrepuntos">5 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">3</a>
+                    <a class="textonombrepuntos">Irán</a>
+                    <a class="textonombrepuntos">3 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">4</a>
+                    <a class="textonombrepuntos">Gales</a>
+                    <a class="textonombrepuntos">1 pts</a>
+                </div>
             </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">3</a>
-                <a class="textonombrepuntos">Ecuador</a>
-                <a class="textonombrepuntos">4 pts</a>
+            <div class="grupo">
+                <a class="nombregrupo">Grupo C</a>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">1</a>
+                    <a class="textonombrepuntos">Argentina</a>
+                    <a class="textonombrepuntos">6 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">2</a>
+                    <a class="textonombrepuntos">Polonia</a>
+                    <a class="textonombrepuntos">4 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">3</a>
+                    <a class="textonombrepuntos">México</a>
+                    <a class="textonombrepuntos">4 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">4</a>
+                    <a class="textonombrepuntos">Arabia Saudi</a>
+                    <a class="textonombrepuntos">3 pts</a>
+                </div>
             </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">4</a>
-                <a class="textonombrepuntos">Catar</a>
-                <a class="textonombrepuntos">0 pts</a>
+            <div class="grupo">
+                <a class="nombregrupo">Grupo D</a>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">1</a>
+                    <a class="textonombrepuntos">Francia</a>
+                    <a class="textonombrepuntos">6 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">2</a>
+                    <a class="textonombrepuntos">Australia</a>
+                    <a class="textonombrepuntos">6 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">3</a>
+                    <a class="textonombrepuntos">Túnez</a>
+                    <a class="textonombrepuntos">4 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">4</a>
+                    <a class="textonombrepuntos">Dinamarca</a>
+                    <a class="textonombrepuntos">1 pts</a>
+                </div>
+            </div>
+            <div class="grupo">
+                <a class="nombregrupo">Grupo E</a>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">1</a>
+                    <a class="textonombrepuntos">Japón</a>
+                    <a class="textonombrepuntos">6 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">2</a>
+                    <a class="textonombrepuntos">España</a>
+                    <a class="textonombrepuntos">4 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">3</a>
+                    <a class="textonombrepuntos">Alemania</a>
+                    <a class="textonombrepuntos">4 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">4</a>
+                    <a class="textonombrepuntos">Costa Rica</a>
+                    <a class="textonombrepuntos">3 pts</a>
+                </div>
+            </div>
+            <div class="grupo">
+                <a class="nombregrupo">Grupo F</a>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">1</a>
+                    <a class="textonombrepuntos">Marruecos</a>
+                    <a class="textonombrepuntos">7 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">2</a>
+                    <a class="textonombrepuntos">Croacia</a>
+                    <a class="textonombrepuntos">5 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">3</a>
+                    <a class="textonombrepuntos">Bélgica</a>
+                    <a class="textonombrepuntos">4 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">4</a>
+                    <a class="textonombrepuntos">Canadá</a>
+                    <a class="textonombrepuntos">0 pts</a>
+                </div>
+            </div>
+            <div class="grupo">
+                <a class="nombregrupo">Grupo G</a>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">1</a>
+                    <a class="textonombrepuntos">Brasil</a>
+                    <a class="textonombrepuntos">6 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">2</a>
+                    <a class="textonombrepuntos">Suiza</a>
+                    <a class="textonombrepuntos">6 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">3</a>
+                    <a class="textonombrepuntos">Camerún</a>
+                    <a class="textonombrepuntos">4 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">4</a>
+                    <a class="textonombrepuntos">Serbia</a>
+                    <a class="textonombrepuntos">1 pts</a>
+                </div>
+            </div>
+            <div class="grupo">
+                <a class="nombregrupo">Grupo H</a>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">1</a>
+                    <a class="textonombrepuntos">Portugal</a>
+                    <a class="textonombrepuntos">6 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">2</a>
+                    <a class="textonombrepuntos">Corea del Sur</a>
+                    <a class="textonombrepuntos">4 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">3</a>
+                    <a class="textonombrepuntos">Uruguay</a>
+                    <a class="textonombrepuntos">4 pts</a>
+                </div>
+                <div class="nombrepuntos">
+                    <a class="textonombrepuntos">4</a>
+                    <a class="textonombrepuntos">Ghana</a>
+                    <a class="textonombrepuntos">3 pts</a>
+                </div>
             </div>
         </div>
-        <div class="grupo">
-            <a class="nombregrupo">Grupo B</a>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">1</a>
-                <a class="textonombrepuntos">Inglaterra</a>
-                <a class="textonombrepuntos">7 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">2</a>
-                <a class="textonombrepuntos">EE UU</a>
-                <a class="textonombrepuntos">5 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">3</a>
-                <a class="textonombrepuntos">Irán</a>
-                <a class="textonombrepuntos">3 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">4</a>
-                <a class="textonombrepuntos">Gales</a>
-                <a class="textonombrepuntos">1 pts</a>
-            </div>
-        </div>
-        <div class="grupo">
-            <a class="nombregrupo">Grupo C</a>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">1</a>
-                <a class="textonombrepuntos">Argentina</a>
-                <a class="textonombrepuntos">6 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">2</a>
-                <a class="textonombrepuntos">Polonia</a>
-                <a class="textonombrepuntos">4 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">3</a>
-                <a class="textonombrepuntos">México</a>
-                <a class="textonombrepuntos">4 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">4</a>
-                <a class="textonombrepuntos">Arabia Saudi</a>
-                <a class="textonombrepuntos">3 pts</a>
-            </div>
-        </div>
-        <div class="grupo">
-            <a class="nombregrupo">Grupo D</a>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">1</a>
-                <a class="textonombrepuntos">Francia</a>
-                <a class="textonombrepuntos">6 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">2</a>
-                <a class="textonombrepuntos">Australia</a>
-                <a class="textonombrepuntos">6 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">3</a>
-                <a class="textonombrepuntos">Túnez</a>
-                <a class="textonombrepuntos">4 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">4</a>
-                <a class="textonombrepuntos">Dinamarca</a>
-                <a class="textonombrepuntos">1 pts</a>
-            </div>
-        </div>
-        <div class="grupo">
-            <a class="nombregrupo">Grupo E</a>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">1</a>
-                <a class="textonombrepuntos">Japón</a>
-                <a class="textonombrepuntos">6 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">2</a>
-                <a class="textonombrepuntos">España</a>
-                <a class="textonombrepuntos">4 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">3</a>
-                <a class="textonombrepuntos">Alemania</a>
-                <a class="textonombrepuntos">4 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">4</a>
-                <a class="textonombrepuntos">Costa Rica</a>
-                <a class="textonombrepuntos">3 pts</a>
-            </div>
-        </div>
-        <div class="grupo">
-            <a class="nombregrupo">Grupo F</a>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">1</a>
-                <a class="textonombrepuntos">Marruecos</a>
-                <a class="textonombrepuntos">7 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">2</a>
-                <a class="textonombrepuntos">Croacia</a>
-                <a class="textonombrepuntos">5 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">3</a>
-                <a class="textonombrepuntos">Bélgica</a>
-                <a class="textonombrepuntos">4 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">4</a>
-                <a class="textonombrepuntos">Canadá</a>
-                <a class="textonombrepuntos">0 pts</a>
-            </div>
-        </div>
-        <div class="grupo">
-            <a class="nombregrupo">Grupo G</a>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">1</a>
-                <a class="textonombrepuntos">Brasil</a>
-                <a class="textonombrepuntos">6 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">2</a>
-                <a class="textonombrepuntos">Suiza</a>
-                <a class="textonombrepuntos">6 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">3</a>
-                <a class="textonombrepuntos">Camerún</a>
-                <a class="textonombrepuntos">4 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">4</a>
-                <a class="textonombrepuntos">Serbia</a>
-                <a class="textonombrepuntos">1 pts</a>
-            </div>
-        </div>
-        <div class="grupo">
-            <a class="nombregrupo">Grupo H</a>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">1</a>
-                <a class="textonombrepuntos">Portugal</a>
-                <a class="textonombrepuntos">6 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">2</a>
-                <a class="textonombrepuntos">Corea del Sur</a>
-                <a class="textonombrepuntos">4 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">3</a>
-                <a class="textonombrepuntos">Uruguay</a>
-                <a class="textonombrepuntos">4 pts</a>
-            </div>
-            <div class="nombrepuntos">
-                <a class="textonombrepuntos">4</a>
-                <a class="textonombrepuntos">Ghana</a>
-                <a class="textonombrepuntos">3 pts</a>
-            </div>
-        </div>
-    </div>
+    </div> 
 </body>
 </html>
