@@ -30,7 +30,7 @@ div {
 
 #fondoinicio {
     margin: 2% 17% 0%;
-    padding: 2% 0% 20%;
+    padding: 2% 0% 25%;
 }
 
 body {
@@ -46,13 +46,19 @@ body {
 }
 
 #proxpart {
+    position: absolute;
     text-align: center;
     width: 100%;
-    margin: 0% 5% 0% 2%;
     flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.proximo {
+.textoproxpart {
+    font-size: auto;
+}
+
+#proximo {
     position: absolute;
     gap: 90px;
     margin: 15% 25% 0%;
@@ -62,10 +68,9 @@ a {
     font-size: xx-large;
 }
 
-img {
-    height: auto;
-    width: 80px;
-    object-fit:contain;
+img {  
+    width:80px;
+    height:auto;
 }
 
 nav {
@@ -131,12 +136,13 @@ nav {
 }
 
 #fondoclas { 
-    margin: 2% 2% 0%;
-    padding: 2% 15% 27%;
+    margin: 2% 2% 0% 1%;
+    padding: 2% 15% 30%;
     height: 20%;
 }
 
 .tabla {
+    margin-top: 2%;
     display: flex;
 }
 
@@ -192,10 +198,10 @@ nav {
     background-color: blanchedalmond;
 }
 
-#final {
+.ronda {
     display: flex;
     flex-direction: column;
-    
+    margin: 0% 2% 0%;
 }
 
 #partfinal {
@@ -248,10 +254,97 @@ nav {
     border-radius: 0%;
 }
 
-@media (max-width: 600px) {
-    div {
-        height: auto;
-        margin: 0% 0% 5% 7%;
-        width: 300px;
+@media (max-width:1325px) {
+    #fondoclas {
+        padding-bottom: 50%;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    #proximo {
+        margin-left: 22.5%;
+    }
+}
+
+@media (max-width:1250px) {
+    .tabla {
+        flex-direction: column;
+    }
+
+    .textoproxpart {
+        font-size: 100%;
+    }
+
+    .izq, .dcha {
+        text-align: center;
+    }
+
+    #tablagrup, .dcha, .izq {
+        flex-direction: row;
+    }
+
+    #proximo {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width:1200px) {
+    #fondoclas {
+        padding-bottom: 60%;
+    }
+
+    #proximo {
+        gap: 80px;
+    }
+}
+
+@media (max-width:950px) {
+    #fondoclas {
+        padding-bottom: 100%;
+    }
+
+    #proximo {
+        gap: 50px;
+    }
+
+    img {
+        width: 30px;
+    }
+}
+
+@media (orientation:portrait) {
+    a, .botones, .fondobotones, .tipopartido, .ganado, .perdido, .textonombrepuntos {
+        font-size: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #proximo {
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 20%;
+        margin-left: 42.5%;
+    }
+
+    .fondobotones {
+        width: 100px;
+        height: 3vh;
+    }
+
+    #fondoinicio {
+        padding-bottom: 50%;
+    }
+
+    .grupo {
+        width: 150px;
+        height: 100px;
     }
 }
