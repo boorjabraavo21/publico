@@ -198,6 +198,22 @@ nav {
     background-color: blanchedalmond;
 }
 
+.grupo:active {
+    box-shadow:2px 2px #242424;
+}
+
+#proximo:active {
+    text-shadow:2px 2px gray;
+}
+
+h1::first-letter {
+    font-size: 120%;
+}
+
+h2::first-letter {
+    font-size: 120%;
+}
+
 .ronda {
     display: flex;
     flex-direction: column;
