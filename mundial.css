@@ -281,6 +281,10 @@ nav {
         text-align: center;
     }
 
+    .partido {
+        margin-top: 2%;
+    }
+
     #tablagrup, .dcha, .izq {
         flex-direction: row;
     }
