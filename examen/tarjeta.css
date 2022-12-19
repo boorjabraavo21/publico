@@ -24,6 +24,7 @@ div {
     width: auto;
     display: flex;
     flex-direction: column;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     transition: all 1s ease;
@@ -35,13 +36,14 @@ p {
     text-align: center;
     font-size: xx-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: red;
+    color: rgb(170, 0, 0);
     text-shadow: 1px 1px gold;
     transition: all 1s ease;
 }
 
 div:hover, div:active {
     opacity: 1;
+    background-color: rgba(170, 0, 0, 0.089);
 }
 
 @media all {
