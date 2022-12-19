@@ -1,6 +1,7 @@
 * {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-variant: small-caps;
+    border-radius: 5px;
 }
 header {
     text-align: center;
@@ -11,7 +12,6 @@ header {
     padding-top: 0.01%;
     margin-left: 37%;
     padding-bottom: 0.01%;
-    border-radius: 5px;
 }
 
 #titulo {
@@ -28,35 +28,49 @@ div {
     align-items: center;
 }
 
-.fondo {
-    background-color: blanchedalmond;
-    margin: 2% 20% 0%;
-    padding-bottom: 5%;
-    opacity: 80%;
-    display: flex;
-    flex-direction: column;
+#fondoinicio {
+    margin: 2% 17% 0%;
+    padding: 2% 0% 25%;
 }
 
 body {
     background-color: blanchedalmond;
-    background-image: url(./fondomundial.jpg);
-    background-size: 100%;
+    background-image: url("./fondomundial.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #proxpart {
+    position: absolute;
     text-align: center;
-    margin: 5% 43% 0%;
+    width: 100%;
     flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.part {
-    gap: 40px;
+.textoproxpart {
+    font-size: auto;
+}
+
+#proximo {
+    position: absolute;
+    gap: 90px;
+    margin: 15% 25% 0%;
 }
 
 a {
     font-size: xx-large;
+}
+
+img {  
+    width:80px;
+    height:auto;
 }
 
 nav {
@@ -72,7 +86,6 @@ nav {
     width: 150px;
     height: 4vh;
     background-color: blanchedalmond;
-    border-radius: 5px;
     margin: 5px;
     border-width: 0px 2px 2px 0px;
     border-color: gainsboro;
@@ -87,14 +100,17 @@ nav {
     background-color: rgba(255, 219, 219, 0.775);
 }
 
-#eliminatoria {
-    background-color: rgb(133, 12, 36);
+.partes {
     display: flex;
     flex-direction: column;
-    padding: 50px 400px 50px 400px;
+}
+
+#eliminatoria {
+    background-color: rgb(133, 12, 36);
     margin: 0% 0% 5% 7%;
-    width: 500px;
-    border-radius: 5px;
+    padding: 5%;
+    height: 20%;
+    width: 75%;
 }
 
 .fase {
@@ -106,12 +122,27 @@ nav {
     border-radius: 15px;
 }
 
-.fase:hover {
-    color: blanchedalmond;
-    background-color: rgb(133, 12, 36);
+#fasegrupo {
+    background-color: transparent;
+    position: relative;
+    margin-top: 5%;
 }
 
-#tablael {
+.fondo {
+    position: absolute;
+    width: 66%;
+    background-color: blanchedalmond;
+    opacity: 80%;
+}
+
+#fondoclas { 
+    margin: 2% 2% 0% 1%;
+    padding: 2% 15% 30%;
+    height: 20%;
+}
+
+.tabla {
+    margin-top: 2%;
     display: flex;
 }
 
@@ -147,7 +178,7 @@ nav {
 .ganado {
     color: blanchedalmond;
     font-size: 20px;
-    width: 100px;
+    width: 100px;   
 }
 
 .perdido {
@@ -156,23 +187,37 @@ nav {
     width: 100px;
 }
 
-.ganado:hover {
+.ganado:hover, .ganado:active {
     background-color: blanchedalmond;
-    border-radius: 5px;
-    opacity: 70%;
+    opacity: 80%;
     color: rgb(133, 12, 36);
 }
 
-.perdido:hover {
-    border-radius: 5px;
-    opacity: 70%;
+.perdido:hover, .perdido:active {
+    opacity: 80%;
     background-color: blanchedalmond;
 }
 
-#final {
+.grupo:active {
+    box-shadow:2px 2px #242424;
+}
+
+#proximo:active {
+    text-shadow:2px 2px gray;
+}
+
+h1::first-letter {
+    font-size: 120%;
+}
+
+h2::first-letter {
+    font-size: 120%;
+}
+
+.ronda {
     display: flex;
     flex-direction: column;
-    
+    margin: 0% 2% 0%;
 }
 
 #partfinal {
@@ -181,7 +226,7 @@ nav {
 }
 
 #tablagrup {
-    display: flex;
+    position: relative;
     flex-wrap: wrap;
 }
 
@@ -191,12 +236,10 @@ nav {
     font-size: 20px;
     width: 100%;
     padding-left: 2%;
-    border-radius: 5px;
 }
 
 .grupo {
     border-style: solid;
-    border-radius: 5px;
     border-width: 4px;
     border-color: rgb(133, 12, 36);
     background-color: blanchedalmond;
@@ -221,8 +264,107 @@ nav {
     font-size: 20px;
 }
 
-.nombrepuntos:hover {
+.nombrepuntos:hover, .nombrepuntos:active {
     background-color: rgb(133, 12, 36);
     color: blanchedalmond;
+    border-radius: 0%;
 }
 
+@media (max-width:1325px) {
+    #fondoclas {
+        padding-bottom: 50%;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    #proximo {
+        margin-left: 22.5%;
+    }
+}
+
+@media (max-width:1250px) {
+    .tabla {
+        flex-direction: column;
+    }
+
+    .textoproxpart {
+        font-size: 100%;
+    }
+
+    .izq, .dcha {
+        text-align: center;
+    }
+
+    .partido {
+        margin-top: 2%;
+    }
+
+    #tablagrup, .dcha, .izq {
+        flex-direction: row;
+    }
+
+    #proximo {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width:1200px) {
+    #fondoclas {
+        padding-bottom: 60%;
+    }
+
+    #proximo {
+        gap: 80px;
+    }
+}
+
+@media (max-width:950px) {
+    #fondoclas {
+        padding-bottom: 100%;
+    }
+
+    #proximo {
+        gap: 50px;
+    }
+
+    img {
+        width: 30px;
+    }
+}
+
+@media (orientation:portrait) {
+    a, .botones, .fondobotones, .tipopartido, .ganado, .perdido, .textonombrepuntos {
+        font-size: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #proximo {
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 20%;
+        margin-left: 42.5%;
+    }
+
+    .fondobotones {
+        width: 100px;
+        height: 3vh;
+    }
+
+    #fondoinicio {
+        padding-bottom: 50%;
+    }
+
+    .grupo {
+        width: 150px;
+        height: 100px;
+    }
+}
