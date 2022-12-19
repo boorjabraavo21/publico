@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    transition: all 1s ease;
+}
+
+div {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+p {
+    padding: 3%;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    text-shadow: 1px 1px gold;
+    transition: all 1s ease;
+}
+
+div:hover, div:active {
+    opacity: 1;
+}
+
+@media all {
+    img, div {
+        width: 70vh;
+        margin-left: calc(50vw - 35vh);
+    }
+}
