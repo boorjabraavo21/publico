@@ -21,9 +21,9 @@
 			<xsl:value-of select="."/>
 		</p>
 	</xsl:template>
-	<xsl:template match="letras">
+	<xsl:template match="estrofa">
 		<p>
-			<xsl:value-of select="estrofa"/>
+			<xsl:value-of select="verso"/>
 		</p>
 	</xsl:template>
 </xsl:stylesheet>
