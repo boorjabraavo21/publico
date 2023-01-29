@@ -23,7 +23,7 @@
 	</xsl:template>
 	<xsl:template match="letras">
 		<p>
-			<xsl:value-of select="."/>
+			<xsl:value-of select="estrofa"/>
 		</p>
 	</xsl:template>
 </xsl:stylesheet>
