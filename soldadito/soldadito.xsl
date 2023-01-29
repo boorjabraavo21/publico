@@ -23,16 +23,7 @@
 	</xsl:template>
 	<xsl:template match="estrofa">
 		<p>
-			<xsl:value-of select="verso"/>
-		</p>
-		<p>
-			<xsl:value-of select="verso"/>
-		</p>
-		<p>
-			<xsl:value-of select="verso"/>
-		</p>
-		<p>
-			<xsl:value-of select="verso"/>
+			<xsl:value-of select="."/>
 		</p>
 	</xsl:template>
 </xsl:stylesheet>
