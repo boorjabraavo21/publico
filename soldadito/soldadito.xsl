@@ -11,15 +11,19 @@
 		</html>
 	</xsl:template>
 	
-	<xsl:template match="cancion">
+	<xsl:template match="titulo">
 		<h1>
-			<xsl:value-of select="titulo"/>
+			<xsl:value-of select="."/>
 		</h1>
+	</xsl:template>
+	<xsl:template match="autor">
 		<h2>
-			<xsl:value-of select="autor"/>
+			<xsl:value-of select="."/>
 		</h2>
+	</xsl:template>
+	<xsl:template match="estrofa">
 		<p>
-			<xsl:value-of select="estrofa"/>
+			<xsl:value-of select="verso"/>
 		</p>
 	</xsl:template>
 </xsl:stylesheet>
