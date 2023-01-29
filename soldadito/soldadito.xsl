@@ -16,4 +16,9 @@
 			<xsl:value-of select="."/>
 		</p>
 	</xsl:template>
+	<xsl:template match="autor">
+		<p>
+			<xsl:value-of select="."/>
+		</p>
+	</xsl:template>
 </xsl:stylesheet>
