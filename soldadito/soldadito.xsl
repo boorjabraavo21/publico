@@ -25,5 +25,14 @@
 		<p>
 			<xsl:value-of select="verso"/>
 		</p>
+		<p>
+			<xsl:value-of select="verso"/>
+		</p>
+		<p>
+			<xsl:value-of select="verso"/>
+		</p>
+		<p>
+			<xsl:value-of select="verso"/>
+		</p>
 	</xsl:template>
 </xsl:stylesheet>
