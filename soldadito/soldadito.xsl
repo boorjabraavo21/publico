@@ -23,7 +23,7 @@
 	</xsl:template>
 	<xsl:template match="estrofa">
 		<p>
-			<xsl:value-of select="."/>
+			<xsl:for-each select="verso"/>
 		</p>
 	</xsl:template>
 </xsl:stylesheet>
