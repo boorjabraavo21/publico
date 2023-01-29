@@ -21,4 +21,9 @@
 			<xsl:value-of select="."/>
 		</p>
 	</xsl:template>
+	<xsl:template match="letras">
+		<p>
+			<xsl:value-of select="."/>
+		</p>
+	</xsl:template>
 </xsl:stylesheet>
