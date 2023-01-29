@@ -22,8 +22,10 @@
 		</h2>
 	</xsl:template>
 	<xsl:template match="estrofa">
-		<p>
-			<xsl:for-each select="verso"/>
-		</p>
+		<xsl:for-each select="verso">
+			<p>
+				<xsl:value-of select="."/>
+			</p>
+		</xsl:for-each>
 	</xsl:template>
 </xsl:stylesheet>
