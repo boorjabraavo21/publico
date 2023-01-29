@@ -2,19 +2,18 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
 		<html>
-			<head></head>
+			<head>
+				<link rel="stylesheet" type="text/css" href="soldadito.css"/>
+			</head>
 			<body>
-				<h1>Información de la canción</h1>
-				<h2>
-					<xsl:value-of select="cancion/titulo"/>
-				</h2>
-				<xsl:for-each select="cancion/letra/estrofa">
-					<tr>
-						<td><xsl:value-of select="titulo"/></td>
-						<td><xsl:value-of select="autor"/></td>
-					</tr>
-				</xsl:for-each>
+				<xsl:apply-templates/>
 			</body>
 		</html>
+	</xsl:template>
+	
+	<xsl:template match="titulo">
+		<p>
+			<xsl:value-of select="."/>
+		</p>
 	</xsl:template>
 </xsl:stylesheet>
