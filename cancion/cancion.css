@@ -1,6 +1,5 @@
 body {
     counter-reset: estrofa section;
-    text-align: center;
 }
 
 span {
