@@ -8,7 +8,7 @@ span {
 
 h3::before {
     counter-increment: estrofa;
-    content: "Estrofa " counter(estrofa) ": ";
+    content: "Estrofa " counter(estrofa);
 }
 
 p::before {

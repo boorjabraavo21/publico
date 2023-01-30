@@ -23,10 +23,10 @@
 	</xsl:template>
 	<xsl:template match="estrofa">
 		<xsl:for-each select=".">
-			<h3><span></span></h3>
+			<h3></h3>
 			<xsl:for-each select="verso">
 				<p>
-					<xsl:value-of select="."></xsl:value-of>
+					<span><xsl:value-of select="."></xsl:value-of></span>
 				</p>
 			</xsl:for-each>
 		</xsl:for-each>
