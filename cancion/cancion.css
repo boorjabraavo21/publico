@@ -1,18 +1,21 @@
 body {
     counter-reset: estrofa section;
-    justify-items: center;
+    background-color: darkgreen;
 }
 
 h3::before {
     counter-increment: estrofa;
     content: "Estrofa " counter(estrofa);
+    background-color: yellow;
+    color: darkgreen;
 }
 
 p::before {
     counter-increment: section;
     content: "Verso " counter(section) ": ";
+    color: yellow;
 }
 
 span {
-    color: blue;
+    color:aquamarine;
 }
