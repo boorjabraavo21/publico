@@ -6,26 +6,19 @@
 				<link rel="stylesheet" type="text/css" href="cancion.css"/>
 			</head>
 			<body>
-				<xsl:apply-templates/>
+				<h1>
+					<xsl:value-of select="titulo"/>
+				</h1>
+				<h2>
+					<xsl:value-of select="autor"/>
+				</h2>
+				<h3>
+					Estrofa
+					<xsl:for-each select="estrofa">
+						<xsl:value-of select="verso"/>
+					</xsl:for-each>
+				</h3>
 			</body>
 		</html>
-	</xsl:template>
-	
-	<xsl:template match="titulo">
-		<h1>
-			<xsl:value-of select="."/>
-		</h1>
-	</xsl:template>
-	<xsl:template match="autor">
-		<h2>
-			<xsl:value-of select="."/>
-		</h2>
-	</xsl:template>
-	<xsl:template match="estrofa">
-		<xsl:for-each select="verso">
-			<p>
-				<xsl:value-of select="."/>
-			</p>
-		</xsl:for-each>
 	</xsl:template>
 </xsl:stylesheet>
