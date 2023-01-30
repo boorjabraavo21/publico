@@ -1,3 +1,6 @@
+h3 {
+    counter-reset: section;
+}
 p::before {
     counter-increment: section;
     content: "Verso " counter(section) ": ";
