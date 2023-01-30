@@ -7,17 +7,15 @@
 			</head>
 			<body>
 				<h1>
-					<xsl:value-of select="titulo"/>
+					<xsl:value-of select="titulo"></xsl:value-of>
 				</h1>
 				<h2>
-					<xsl:value-of select="autor"/>
+					<xsl:value-of select="autor"></xsl:value-of>
 				</h2>
-				<h3>
-					Estrofa
-					<xsl:for-each select="estrofa">
-						<xsl:value-of select="verso"/>
-					</xsl:for-each>
-				</h3>
+				<xsl:for-each select="estrofa">
+					<h3>Estrofa</h3>
+					<p><xsl:value-of select="verso"></xsl:value-of></p>
+				</xsl:for-each>
 			</body>
 		</html>
 	</xsl:template>
