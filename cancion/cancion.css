@@ -1,7 +1,3 @@
-body {
-    counter-reset: verso;
-}
-
 p::before {
     counter-increment: verso;
     content: "Verso " counter(verso) ": ";
