@@ -22,7 +22,7 @@
 	</xsl:template>
 	<xsl:template match="estrofa">
 		<xsl:for-each select=".">
-			<h3>Estrofa</h3>
+			<h3></h3>
 			<spam/>
 			<xsl:for-each select="verso">
 				<p>
