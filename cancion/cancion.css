@@ -1,5 +1,6 @@
 body {
     counter-reset: estrofa section;
+    align-items: center;
 }
 
 h3::before {
