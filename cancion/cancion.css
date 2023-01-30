@@ -1,4 +1,4 @@
-body {
+* {
     counter-reset: section;
 }
 p::before {
