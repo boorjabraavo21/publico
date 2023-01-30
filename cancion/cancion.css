@@ -2,10 +2,6 @@ body {
     counter-reset: estrofa section;
 }
 
-span {
-    color: blue;
-}
-
 h3::before {
     counter-increment: estrofa;
     content: "Estrofa " counter(estrofa);
@@ -14,4 +10,8 @@ h3::before {
 p::before {
     counter-increment: section;
     content: "Verso " counter(section) ": ";
+}
+
+span {
+    color: blue;
 }
