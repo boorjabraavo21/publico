@@ -1,4 +1,4 @@
-h3 {
+body {
     counter-reset: section;
 }
 p::before {
