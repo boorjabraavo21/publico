@@ -24,7 +24,6 @@
 	<xsl:template match="estrofa">
 		<xsl:for-each select=".">
 			<h3></h3>
-			<spam/>
 			<xsl:for-each select="verso">
 				<p>
 					<xsl:value-of select="."></xsl:value-of>
