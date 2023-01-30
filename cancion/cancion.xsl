@@ -25,7 +25,7 @@
 			<h3></h3>
 			<xsl:for-each select="verso">
 				<p>
-					<span><xsl:value-of select="."></xsl:value-of></span>
+					<span><xsl:value-of select="."/></span>
 				</p>
 			</xsl:for-each>
 		</xsl:for-each>
