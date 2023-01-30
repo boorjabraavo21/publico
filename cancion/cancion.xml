@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="cancion.xsl"?>
-<cancion  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/borja/OneDrive/Escritorio/borja/CENEC/publico/cancion/cancion.xsd">
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/borja/OneDrive/Escritorio/borja/CENEC/publico/cancion/cancion.xsd">
 	<titulo>No me doy por vencido</titulo>
 	<autor>Luis Fonsi</autor>
 	<letras>
