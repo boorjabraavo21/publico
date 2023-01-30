@@ -7,14 +7,15 @@
 			</head>
 			<body>
 				<xsl:apply-templates/>
+				</xsl:template>
+	            <xsl:template match="titulo">
+					<h1>
+						<xsl:value-of select="."/>
+					</h1>
+				</xsl:template>
 			</body>
 		</html>
-	</xsl:template>
-	<xsl:template match="titulo">
-		<h1>
-			<xsl:value-of select="."/>
-		</h1>
-	</xsl:template>
+	
 	<xsl:template match="autor">
 		<h2>
 			<xsl:value-of select="."/>
