@@ -1,0 +1,31 @@
+body {
+    counter-reset: estrofa section;
+    background-color: rgb(134, 185, 134);
+}
+
+h1 {
+    color: rgb(116, 64, 0);
+}
+
+h2 {
+    color:rgb(0, 0, 0);
+}
+
+h3::before {
+    counter-increment: estrofa;
+    content: "Estrofa " counter(estrofa);
+    background-color: rgb(200, 193, 0);
+    color: rgb(0, 24, 47);
+}
+
+p::before {
+    counter-increment: section;
+    content: "Verso " counter(section) ": ";
+    color: blue;
+}
+
+span {
+    color:blue;
+    background-color: yellow;
+    font-weight: bold;
+}
