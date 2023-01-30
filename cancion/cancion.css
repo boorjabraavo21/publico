@@ -1,4 +1,4 @@
 p::before {
-    counter-increment: verso;
-    content: "Verso " counter(verso) ": ";
+    counter-increment: section;
+    content: "Verso " counter(section) ": ";
 }
