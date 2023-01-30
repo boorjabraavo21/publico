@@ -3,6 +3,14 @@ body {
     background-color: darkgreen;
 }
 
+h1 {
+    color: darkorange;
+}
+
+h2 {
+    color:goldenrod;
+}
+
 h3::before {
     counter-increment: estrofa;
     content: "Estrofa " counter(estrofa);
