@@ -16,6 +16,7 @@
 					<h3>Estrofa</h3>
 					<p><xsl:value-of select="verso"></xsl:value-of></p>
 				</xsl:for-each>
+				<xsl:apply-templates/>
 			</body>
 		</html>
 	</xsl:template>
