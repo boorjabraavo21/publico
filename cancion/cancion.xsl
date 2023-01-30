@@ -24,8 +24,6 @@
 	<xsl:template match="estrofa">
 		<xsl:for-each select="verso">
 			<p>
-				<xsl:value-of select="Verso "/>
-				<xsl:number format="1: "/>
 				<xsl:value-of select="."/>
 			</p>
 		</xsl:for-each>

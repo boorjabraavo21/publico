@@ -1,0 +1,4 @@
+p::before {
+    counter-increment: verso;
+    content: "Verso " counter(verso) ": ";
+}
