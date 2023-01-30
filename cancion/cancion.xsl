@@ -4,6 +4,7 @@
 		<html>
 			<head>
 				<link rel="stylesheet" type="text/css" href="cancion.css"/>
+				<tittle>Cancion</tittle>
 			</head>
 			<body>
 				<xsl:apply-templates/>
