@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#foto {
+    position: absolute;
+    z-index: 0;
+    width: auto;
+    height: 100%;
+    /* object-fit: cover; */
+    /* object-position: 60% 10%; */
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease; 
+}
+
+#texto {
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease; 
+}
+
+p {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align:center;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    background-color:transparent;
+    color: rgb(24, 99, 218);
+    text-shadow:1px 1px rgb(110, 241, 223);
+    font-size:calc(1.2em + 1vw + 1vh);
+    font-weight:bold;
+    z-index:2;
+}
+
+#texto:hover, #texto:active {
+    opacity: 1;
+    background-color:rgba(255,255,255,0.15);
+}
+
+@media all {
+    img, #texto {
+        width:70vh;
+        margin-left:calc(50vw - 35vh);
+    }
+}
