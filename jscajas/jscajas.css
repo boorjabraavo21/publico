@@ -1,0 +1,44 @@
+#dtotal {
+    width: 100%;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dfila {
+    display: flex;
+    justify-content: space-between;
+}
+
+#dmedio {
+    display: flex;
+    justify-content: center;
+}
+
+.dcuadrado {
+    width: 20vh;
+    height: 20vh;
+    text-align: center;
+}
+
+#d1 {
+    background-color: red;
+}
+
+#d2 {
+    background-color: blue;
+    color: white;
+}
+
+#d3 {
+    background-color: green;
+}
+
+#d4 {
+    background-color: yellow;
+}
+
+#d5 {
+    background-color: orange;
+}
